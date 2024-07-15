@@ -14,8 +14,8 @@ def PrepareLibrariesAndDatasets():
   #os.system("apt update")
   #os.system("apt install aria2")
   print('Done.')
-  DatasetPath = '/content/OctaveNet/Datasets'
-  ModelPath   = '/content/OctaveNet/Models'
+  DatasetPath = '/kaggle/working/OctaveNet/Datasets'
+  ModelPath   = '/kaggle/working/OctaveNet/Models'
   os.makedirs(DatasetPath, exist_ok=True)
   print('Downloading and Extracting Datasets...', end=' ')
   os.system(f"aria2c -x 8 -d {DatasetPath} -o LEVIR-CD-256.zip    https://emailkntuacir-my.sharepoint.com/:u:/g/personal/farhadinima75_email_kntu_ac_ir/ERDI-5yFHahDl-1a390i2DgBJULY_BNh6vctHm4swinNZg?download=1")
