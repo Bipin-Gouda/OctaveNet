@@ -11,8 +11,8 @@ from Modules.Model import OctaveNet
 def PrepareLibrariesAndDatasets():
   print('Installing Libraries...', end=' ')
   #os.system("pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113")
-  os.system("apt update")
-  os.system("apt install aria2")
+  #os.system("apt update")
+  #os.system("apt install aria2")
   print('Done.')
   DatasetPath = '/content/OctaveNet/Datasets'
   ModelPath   = '/content/OctaveNet/Models'
